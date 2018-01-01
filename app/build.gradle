@@ -37,10 +37,13 @@ dependencies {
     compile rootProject.ext.dependencies["design"]
     compile rootProject.ext.dependencies["butterknife"]
     compile rootProject.ext.dependencies["annotation"]
+
     //网络
     compile rootProject.ext.dependencies["dagger"]
     compile rootProject.ext.dependencies["dagger-compiler"]
     compile rootProject.ext.dependencies["okrx"]
     compile rootProject.ext.dependencies["okgo"]
-    compile project(':stateLayout')
+
+    //ui
+    compile rootProject.ext.dependencies["stateLayout"]
 }

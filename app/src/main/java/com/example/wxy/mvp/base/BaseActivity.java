@@ -5,12 +5,9 @@ import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.WindowManager;
 
-
 import com.example.wxy.mvp.R;
-import com.fingdo.statelayout.StateLayout;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -27,10 +24,10 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
 	@Bind(R.id.tool_bar)
 	public Toolbar toolbar;
 
-
+/*
 	@Nullable
 	@Bind(R.id.state_layout)
-	public StateLayout stateLayout;
+	public StateLayout stateLayout;*/
 
 
 	@Override
@@ -48,32 +45,32 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
 
 	@Override
 	public void showNoNetWork() {
-		if (stateLayout!=null)
-			stateLayout.showNoNetworkView();
+		/*if (stateLayout!=null)
+			stateLayout.showNoNetworkView();*/
 	}
 
 	@Override
 	public void showLoading() {
-		if (stateLayout!=null)
-			stateLayout.showLoadingView();
+		/*if (stateLayout!=null)
+			stateLayout.showLoadingView();*/
 	}
 
 	@Override
 	public void showLoadFail() {
-		if (stateLayout!=null)
-			stateLayout.showErrorView();
+	/*	if (stateLayout!=null)
+			stateLayout.showErrorView();*/
 	}
 
 	@Override
 	public void showContentView() {
-		if (stateLayout!=null)
-			stateLayout.showContentView();
+	/*	if (stateLayout!=null)
+			stateLayout.showContentView();*/
 	}
 
 	@Override
 	public void showEmptyView() {
-		if (stateLayout!=null)
-			stateLayout.showEmptyView();
+		/*if (stateLayout!=null)
+			stateLayout.showEmptyView();*/
 	}
 
 }
